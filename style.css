@@ -1,0 +1,11 @@
+html {
+    font-family: monospace;
+    background: black;
+    color:green;
+}
+
+h1{
+    font-weight: normal;
+    color:lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+}
