@@ -1,11 +1,137 @@
 html {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     background: black;
     color:green;
 }
 
-h1{
+a {
+    color:lightgreen;
+}
+
+a:hover{
+    color:lightgreen;
+    text-shadow: 0 0 2px lightgreen;
+}
+.stdlist {
+    list-style-type: "> ";
+    li {
+        padding: 5px;
+    }
+}
+
+.navtitle {
     font-weight: normal;
     color:lightgreen;
     text-shadow: 0 0 10px lightgreen;
+    font-size: 50px;
+    margin: 0;
+    overflow:hidden;
+    width:max-content;
+    display:flex;
+    justify-content:left;
+    border-right: solid 3px transparent;
+    white-space: nowrap;
+    animation:
+        type 1.5s steps(13,end),cursor .5s step-end 6;
+}
+
+@keyframes type{
+    from{width:0}
+    to {width:390px}
+}
+
+@keyframes cursor{
+    from, to{border-color:transparent}
+    50%{border-color:lightgreen}
+}
+
+nav {
+    box-shadow: green 0 0 12px 6px;
+    background-color:black;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+.navlinks {
+    padding-left: 0;
+    padding-right: 75%;
+    flex-direction: row;
+    display:flex;
+    justify-content: space-between;
+    list-style:none;
+    li {
+        padding: 10px;
+        a {
+            color:green;
+        }
+        a:hover{
+            color:lightgreen;
+            text-shadow:0 0 2px lightgreen;
+        }
+    }
+    .currentnav {
+        box-shadow: green 0 0 3px 2px;
+        a {
+            color:white;
+        }
+        a:hover{
+            color:white;
+            text-shadow:0 0 2px white;
+        }
+    }
+}
+
+.navascii {
+    position:absolute;
+    right:20px;
+    top:10px;
+    margin:0px;
+    color:lightgreen;
+    text-shadow: 0 0 4px lightgreen;
+}
+
+#main {
+    display:flex;
+    position:absolute;
+    top: 147px;
+    left: 0px;
+    right:0px;
+    bottom: 0px;
+    align-items: center;
+    flex-direction:column;
+    padding: 40px;
+}
+
+.gap {
+    padding: 20px;
+}
+
+.box {
+    width:40%;
+    background:black;
+    box-shadow: green 0 0 3px 2px;
+    border: double 5px green;
+    height: fit-content;
+}
+
+.boxhead {
+    color: lightgreen;
+    padding:6px;
+    padding-left: 10px;
+    padding-right:10px;
+    margin:0px;
+    border-bottom: solid 1px green;
+    flex-direction: row;
+    display:flex;
+    justify-content: space-between;
+    list-style:none;
+}
+
+.boxbody {
+    padding: 16px;
+    margin: 0px;
 }
