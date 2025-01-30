@@ -4,6 +4,16 @@ html {
     color:green;
 }
 
+strong {
+    color:lightgreen;
+}
+
+h3 {
+    color:lightgreen;
+    text-shadow: 0 0 2px lightgreen;
+    font-weight: normal;
+}
+
 a {
     color:lightgreen;
 }
@@ -24,7 +34,7 @@ a:hover{
     color:lightgreen;
     text-shadow: 0 0 10px lightgreen;
     font-size: 50px;
-    margin: 0;
+    margin: 10;
     overflow:hidden;
     width:max-content;
     display:flex;
@@ -32,12 +42,12 @@ a:hover{
     border-right: solid 3px transparent;
     white-space: nowrap;
     animation:
-        type 1.5s steps(13,end),cursor .5s step-end 6;
+        type 1.8s steps(20,end),cursor .5s;
 }
 
 @keyframes type{
     from{width:0}
-    to {width:390px}
+    to {width:600px}
 }
 
 @keyframes cursor{
@@ -51,15 +61,20 @@ nav {
     overflow: hidden;
     position: absolute;
     top: 0;
-    width: 100%;
     left: 0;
+    right: 0;
+    display:flex;
     padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-bottom: double 5px green;
 }
 
 .navlinks {
+    margin-top:7;
+    padding:0;
     width: fit-content;
-    padding-left: 0;
-    padding-right: 75%;
     flex-direction: row;
     display:flex;
     text-wrap: nowrap;
@@ -75,9 +90,13 @@ nav {
         }
     }
     .currentnav {
-        box-shadow: green 0 0 3px 2px;
+        /*box-shadow: green 0 0 3px 2px;*/
         a {
+            padding:2px;
             color:white;
+            border-left-style: double;
+            border-right-style: double;
+            border-color:white;
         }
         a:hover{
             color:white;
@@ -86,11 +105,12 @@ nav {
     }
 }
 
-.navascii {
-    position:absolute;
-    right:20px;
-    top:10px;
-    margin:0px;
+.navline {
+    margin: 3px;
+}
+
+.bascii {
+    margin:10px;
     color:lightgreen;
     text-shadow: 0 0 4px lightgreen;
 }
@@ -98,7 +118,7 @@ nav {
 #main {
     display:flex;
     position:absolute;
-    top: 147px;
+    top: 170px;
     left: 0px;
     right:0px;
     bottom: 0px;
@@ -112,6 +132,15 @@ nav {
 }
 
 .box {
+    width:40%;
+    background:black;
+    box-shadow: green 0 0 3px 2px;
+    border: double 5px green;
+    height: fit-content;
+    margin: 15px;
+}
+
+.navbox {
     width:40%;
     background:black;
     box-shadow: green 0 0 3px 2px;
