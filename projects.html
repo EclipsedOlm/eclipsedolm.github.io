@@ -1,54 +1,81 @@
 <head>
-
+    
+    <title>Eclipse's Den</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+    <script>themeRefresh()</script>
 
 </head>
 
 <body>
-    <nav>
-        <h1 class="navtitle">|| Eclipse's Den ||</h1>
-        <p class="navline">
-            ||-----------------------| ⁎ |-----------------------||
-        </p>
-        <ul class="navlinks">
-            <li><a href="index.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="yippee.html">interests</a></li>
-            <li class="currentnav"><a href="projects.html">projects</a></li>
-            <li><a href="atcoder.html">atcoder collection</a></li>
-        </ul>
-    </nav>
 
-    <div id="main">
+    <header>
 
-        <div class="box">
-            <ul class="boxhead">
-                <li>projects.txt</li>
-                <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+        <h1 class="navtitle">/* Eclipse's Den */</h1>
+
+    </header>
+    <div class="container">
+        <nav>
+            <h2>// nav</h2>
+            <ul class="navlinks">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="yippee.html">interests</a></li>
+                <li class="currentnav"><a href="projects.html">projects</a></li>
+                <li><a href="atcoder.html">atcoder collection</a></li>
             </ul>
-            <div class="boxbody">
-                <ul class="stdlist">
-                    <li>26/7/2024 - ? : this website!</li>
-                    <li>26/1/2025 - ? : untitled game</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="box">
-            <ul class="boxhead">
-                <li>recent_updates.txt</li>
-                <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+            
+            <h2>// theme</h2>
+            <ul class="navlinks">
+                <li><a onclick = "setTheme('default')">ultra</a></li>
+                <li><a onclick = "setTheme('retro')">infinity</a></li>
             </ul>
-            <div class="boxbody">
-                <ul class="stdlist">
-                    <li>27/1/2025 : I'm making a game! (or at least trying to) I have started actively playing around in Godot and - with some help from someone very nice (you know who you are) - made somewhat functional platformer physics. The actual base ideas of mechanics/lore of the game have been detailed in a random Obsidian vault quite long before this but oh well. I will consider yesterday as the day this project actually started moving somewhere. Also, I'm updating this website, haven't touched it in (checks notes) 5 months? wow.</li>
-                    <li>26/7/2024 : this is pretty empty for now, but i should probably start documenting this stuff, beginning with...</li>
+
+            <h2>// status</h2>
+            <p>LAST UPDATE: 1/3/2026</p>
+            <ul class="stdlist">
+                <li>current focus: competitive programming</li>
+                <li>recent games: spiritfarer, slay the spire, silksong</li>
+                <li>current thought: i want FOOD</li>
+                <li>website status: still very WIP. best viewed on desktop. theme setting still not fully functional</li>
+            </ul>
+
+        </nav>
+
+        <div id="main">
+
+            <div class="box">
+                <ul class="boxhead">
+                    <li>projects.txt</li>
+                    <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
                 </ul>
+                <div class="boxbody">
+                    <ul class="stdlist">
+                        <li>26/7/2024 - ? : this website!</li>
+                        <li>26/1/2025 - ? : untitled game</li>
+                    </ul>
+                </div>
             </div>
+
+            <div class="box">
+                <ul class="boxhead">
+                    <li>recent_updates.txt</li>
+                    <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+                </ul>
+                <div class="boxbody">
+                    <ul class="stdlist">
+                        <li>1/3/2026 : oh my days, its been more than a year since i last updated this? had a random spur of motivation to overhaul this site, enjoy the new look</li>
+                        <li>27/1/2025 : I'm making a game! (or at least trying to) I have started actively playing around in Godot and - with some help from someone very nice (you know who you are) - made somewhat functional platformer physics. The actual base ideas of mechanics/lore of the game have been detailed in a random Obsidian vault quite long before this but oh well. I will consider yesterday as the day this project actually started moving somewhere. Also, I'm updating this website, haven't touched it in (checks notes) 5 months? wow.</li>
+                        <li>26/7/2024 : this is pretty empty for now, but i should probably start documenting this stuff, beginning with...</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gap"></div>
+
         </div>
-
-        <div class="gap"></div>
-
     </div>
-
 </body>

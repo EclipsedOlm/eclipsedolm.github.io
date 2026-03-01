@@ -1,50 +1,75 @@
 <head>
-
+    
+    <title>Eclipse's Den</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+    <script>themeRefresh()</script>
 
 </head>
 
 <body>
-    <nav>
-        <h1 class="navtitle">|| Eclipse's Den ||</h1>
-        <p class="navline">
-            ||-----------------------| ⁎ |-----------------------||
-        </p>
-        <ul class="navlinks">
-            <li><a href="index.html">home</a></li>
-            <li class="currentnav"><a href="about.html">about</a></li>
-            <li><a href="yippee.html">interests</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="atcoder.html">atcoder collection</a></li>
-        </ul>
-    </nav>
 
-    <div id="main">
-        <div id="aboutbox" class="box">
-            <ul class="boxhead">
-                <li>about.txt</li>
-                <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+    <header>
+
+        <h1 class="navtitle">/* Eclipse's Den */</h1>
+
+    </header>
+    <div class="container">
+        <nav>
+            <h2>// nav</h2>
+            <ul class="navlinks">
+                <li><a href="index.html">home</a></li>
+                <li class="currentnav"><a href="about.html">about</a></li>
+                <li><a href="yippee.html">interests</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="atcoder.html">atcoder collection</a></li>
             </ul>
-            <div class="boxbody">
-                me stuff:
-                <ul class="stdlist">
-                    <li>name: im not putting this on the open net, iykyk</li>
-                    <li>pronouns: just use they/them i guess you dont know me (maybe you do but if you do you'd already know)</li>
-                    <li>languages: en (mainly), zh (horrendously), a very elementary understanding of french, and im starting to learn japanese too</li>
-                    <li>stuff i like: where do i begin lol. im just gonna make a separate page for this, <a href="yippee.html">here</a></li>
+            
+            <h2>// theme</h2>
+            <ul class="navlinks">
+                <li><a onclick = "setTheme('default')">ultra</a></li>
+                <li><a onclick = "setTheme('retro')">infinity</a></li>
+            </ul>
+
+            <h2>// status</h2>
+            <p>LAST UPDATE: 1/3/2026</p>
+            <ul class="stdlist">
+                <li>current focus: competitive programming</li>
+                <li>recent games: spiritfarer, slay the spire, silksong</li>
+                <li>current thought: i want FOOD</li>
+                <li>website status: still very WIP. best viewed on desktop. theme setting still not fully functional</li>
+            </ul>
+
+        </nav>
+
+        <div id="main">
+            <div id="aboutbox" class="box">
+                <ul class="boxhead">
+                    <li>about.txt</li>
+                    <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
                 </ul>
-                tech stuff:
-                <ul class="stdlist">
-                    <li>programming languages: c++, also trying to learn (with varying degrees of effort) python, gdscript, javascript</li>
-                    <li>code editor: geany (c++), vscode (everything else)</li>
-                    <li>computer: i mainly use a custom desktop pc (CPU: Ryzen 5 5600X, GPU: RTX 3060 Ti, 16GB RAM)</li>
-                </ul>
-                and no, unfortunately im too lazy to make the fake window buttons on this card do anything
+                <div class="boxbody">
+                    me stuff:
+                    <ul class="stdlist">
+                        <li>name: im not putting this on the open net, iykyk</li>
+                        <li>pronouns: just use they/them i guess you dont know me (maybe you do but if you do you'd already know)</li>
+                        <li>languages: en (mainly), zh (horrendously), a very elementary understanding of french, and im starting to learn japanese too</li>
+                        <li>stuff i like: where do i begin lol. im just gonna make a separate page for this, <a href="yippee.html">here</a></li>
+                    </ul>
+                    tech stuff:
+                    <ul class="stdlist">
+                        <li>programming languages: c++, also trying to learn (with varying degrees of effort) python, gdscript, javascript</li>
+                        <li>code editor: geany (c++), vscode (everything else)</li>
+                        <li>computer: i mainly use a custom desktop pc (CPU: Ryzen 5 5600X, GPU: RTX 3060 Ti, 16GB RAM)</li>
+                    </ul>
+                    and no, unfortunately im too lazy to make the fake window buttons on this card do anything
+                </div>
             </div>
+
+            <div class="gap"></div>
         </div>
-
-        <div class="gap"></div>
-
     </div>
-
 </body>

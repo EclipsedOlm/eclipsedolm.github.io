@@ -1,73 +1,98 @@
 <head>
-
+    
+    <title>Eclipse's Den</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+    <script>themeRefresh()</script>
 
 </head>
 
 <body>
-    <nav>
-        <h1 class="navtitle">|| Eclipse's Den ||</h1>
-        <p class="navline">
-            ||-----------------------| ⁎ |-----------------------||
-        </p>
-        <ul class="navlinks">
-            <li><a href="index.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li class="currentnav"><a href="yippee.html">interests</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="atcoder.html">atcoder collection</a></li>
-        </ul>
-    </nav>
+    <header>
 
-    <div id="main">
-        <div class="box">
-            <ul class="boxhead">
-                <li>yippee.txt</li>
-                <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+        <h1 class="navtitle">/* Eclipse's Den */</h1>
+
+    </header>
+    <div class="container">
+        <nav>
+            <h2>// nav</h2>
+            <ul class="navlinks">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li class="currentnav"><a href="yippee.html">interests</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="atcoder.html">atcoder collection</a></li>
             </ul>
-            <div class="boxbody">
-                well you chose to come here, now you will see the stuff i won't shut up about
-            </div>
-        </div>
-        
-        <div class="box">
-            <ul class="boxhead">
-                <li>video games</li>
-                <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+            
+            <h2>// theme</h2>
+            <ul class="navlinks">
+                <li><a onclick = "setTheme('default')">ultra</a></li>
+                <li><a onclick = "setTheme('retro')">infinity</a></li>
             </ul>
-            <div class="boxbody">
-                <ul class="stdlist">
-                    <li><strong>pokemon</strong>: woah how obscure. my favourite pokemon is necrozma, especially the ultra forme. thats where the first half of my online username is from. 
-                        as for favourite game...sun/moon for the story and maybe legends arceus/sv for gameplay
-                    </li>
-                    <li><strong>hollow knight</strong>: LORE!!! exploration and atmosphere is amazing, i must say im pretty bad at combat though lol</li>
-                    <li><strong>minecraft</strong>: a classic. you know whats up</li>
-                    <li><strong>zelda breath of the wild/tears of the kingdom</strong>: once again i think these games dont need more praise as demonstrated by their reception sections in wikipedia</li>
-                    <li><strong>celeste</strong>: great platforming, great music, great story. also there is a disproportionate amount of programmers i know playing this for some reason</li>
-                    <li><strong>outer wilds</strong>: <strong>!!PLEASE PLAY THIS WITHOUT SPOILING YOURSELF ITS A ONCE IN A LIFETIME EXPERIENCE!!</strong> i think this might actually be my favourite game of all time</li>
-                    <li><strong>rain world</strong>: made me cry in a different way than outer wilds. 9/10 great game</li>
+
+            <h2>// status</h2>
+            <p>LAST UPDATE: 1/3/2026</p>
+            <ul class="stdlist">
+                <li>current focus: competitive programming</li>
+                <li>recent games: spiritfarer, slay the spire, silksong</li>
+                <li>current thought: i want FOOD</li>
+                <li>website status: still very WIP. best viewed on desktop. theme setting still not fully functional</li>
+            </ul>
+
+        </nav>
+
+        <div id="main">
+            <div class="box">
+                <ul class="boxhead">
+                    <li>yippee.txt</li>
+                    <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
                 </ul>
+                <div class="boxbody">
+                    well you chose to come here, now you will see the stuff i won't shut up about
+                </div>
             </div>
-        </div>
-
-        <div class="box">
-            <ul class="boxhead">
-                <li>animation</li>
-                <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
-            </ul>
-            <div class="boxbody">
-                somehow i watch a lot of animated shows, especially 2d ones. mostly but not all western. These are probably my top favourites.
-                <ul class="stdlist">
-                    <li><strong>the owl house</strong></li>
-                    <li><strong>amphibia</strong></li>
-                    <li><strong>infinity train</strong></li>
-                    <li><strong>bungou stray dogs</strong></li>
+            
+            <div class="box">
+                <ul class="boxhead">
+                    <li>video games</li>
+                    <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
                 </ul>
+                <div class="boxbody">
+                    <ul class="stdlist">
+                        <li><strong>pokemon</strong>: woah how obscure. my favourite pokemon is necrozma, especially the ultra forme. thats where the first half of my online username is from. 
+                            as for favourite game...sun/moon for the story and maybe legends arceus/sv for gameplay
+                        </li>
+                        <li><strong>hollow knight</strong>: LORE!!! exploration and atmosphere is amazing, i must say im pretty bad at combat though lol</li>
+                        <li><strong>minecraft</strong>: a classic. you know whats up</li>
+                        <li><strong>zelda breath of the wild/tears of the kingdom</strong>: once again i think these games dont need more praise as demonstrated by their reception sections in wikipedia</li>
+                        <li><strong>celeste</strong>: great platforming, great music, great story. also there is a disproportionate amount of programmers i know playing this for some reason</li>
+                        <li><strong>outer wilds</strong>: <strong>!!PLEASE PLAY THIS WITHOUT SPOILING YOURSELF ITS A ONCE IN A LIFETIME EXPERIENCE!!</strong> i think this might actually be my favourite game of all time</li>
+                        <li><strong>rain world</strong>: made me cry in a different way than outer wilds. 9/10 great game</li>
+                    </ul>
+                </div>
             </div>
+
+            <div class="box">
+                <ul class="boxhead">
+                    <li>animation</li>
+                    <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+                </ul>
+                <div class="boxbody">
+                    somehow i watch a lot of animated shows, especially 2d ones. mostly but not all western. These are probably my top favourites.
+                    <ul class="stdlist">
+                        <li><strong>the owl house</strong></li>
+                        <li><strong>amphibia</strong></li>
+                        <li><strong>infinity train</strong></li>
+                        <li><strong>bungou stray dogs</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gap"></div>
+
         </div>
-
-        <div class="gap"></div>
-
     </div>
-
 </body>

@@ -5,7 +5,7 @@ if(localStorage.getItem("theme") === null){
 const stylesheet = document.documentElement.style;
 const themes = new Map([
     ["default", ["#ffffaa", "#ffffee"]],
-    ["new", ["#2be41a", "#ffffee"]],
+    ["retro", ["green", "lightgreen"]],
 ]);
 
 function themeRefresh(){
