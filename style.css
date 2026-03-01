@@ -1,26 +1,62 @@
+:root {
+    --primary: #ffffaa;
+    --secondary: #ffffee;
+}
+
 html {
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-family: "Share Tech Mono", monospace;
     background: black;
-    color:green;
+    color:var(--primary);
+}
+
+body {
+    margin: 10px auto;
+    max-width: 1200px;
+}
+
+header {
+    box-shadow: var(--primary) 0 0 6px 1px;
+    background-color:black;
+    overflow: hidden;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border: double 5px var(--primary);
+    border-bottom: solid 5px var(--primary);
+    border-right: solid 5px var(--primary);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "left right";
 }
 
 strong {
-    color:lightgreen;
+    color:var(--secondary);
+}
+
+h2 {
+    color: var(--secondary);
+    text-shadow: 0 0 2px var(--secondary);
+    font-weight: normal;
 }
 
 h3 {
-    color:lightgreen;
-    text-shadow: 0 0 2px lightgreen;
+    color:var(--secondary);
+    text-shadow: 0 0 2px var(--secondary);
     font-weight: normal;
 }
 
 a {
-    color:lightgreen;
+    color:var(--secondary);
 }
 
 a:hover{
-    color:lightgreen;
-    text-shadow: 0 0 2px lightgreen;
+    color:var(--secondary);
+    text-shadow: 0 0 2px var(--secondary);
 }
 .stdlist {
     list-style-type: "> ";
@@ -30,9 +66,10 @@ a:hover{
 }
 
 .navtitle {
+    /*font-family: 'Courier New', Courier, monospace;*/
     font-weight: normal;
-    color:lightgreen;
-    text-shadow: 0 0 10px lightgreen;
+    color:var(--secondary);
+    text-shadow: 0 0 10px var(--secondary);
     font-size: 50px;
     margin: 10;
     overflow:hidden;
@@ -52,51 +89,55 @@ a:hover{
 
 @keyframes cursor{
     from, to{border-color:transparent}
-    50%{border-color:lightgreen}
+    50%{border-color:var(--secondary)}
 }
 
 nav {
-    box-shadow: green 0 0 12px 6px;
+    box-shadow: var(--primary) 0 0 6px 1px;
     background-color:black;
     overflow: hidden;
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    display:flex;
+    right: 0;*/
+    /*display:flex;
     padding: 10px;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: column;*/
+    padding: 10px;
     margin-bottom: 30px;
-    border-bottom: double 5px green;
+    border: double 5px var(--primary);
+    border-bottom: solid 5px var(--primary);
+    border-right: solid 5px var(--primary);
 }
 
 .navlinks {
+    font-size: 20px;
     margin-top:7;
-    padding:0;
+    padding-left:100px;
     width: fit-content;
-    flex-direction: row;
+    flex-direction: column;
     display:flex;
     text-wrap: nowrap;
-    list-style:none;
+    list-style-type: "> ";
     li {
         padding: 10px;
         a {
-            color:green;
+            color:var(--primary);
         }
         a:hover{
-            color:lightgreen;
-            text-shadow:0 0 2px lightgreen;
+            color:var(--secondary);
+            text-shadow:0 0 2px var(--secondary);
         }
     }
     .currentnav {
-        /*box-shadow: green 0 0 3px 2px;*/
+        /*box-shadow: var(--primary) 0 0 3px 2px;*/
+        list-style-type: "curr >>> ";
         a {
-            padding:2px;
             color:white;
-            border-left-style: double;
+            /*border-left-style: double;
             border-right-style: double;
-            border-color:white;
+            border-color:white;*/
         }
         a:hover{
             color:white;
@@ -111,17 +152,12 @@ nav {
 
 .bascii {
     margin:10px;
-    color:lightgreen;
-    text-shadow: 0 0 4px lightgreen;
+    color:var(--secondary);
+    text-shadow: 0 0 4px var(--secondary);
 }
 
 #main {
     display:flex;
-    position:absolute;
-    top: 170px;
-    left: 0px;
-    right:0px;
-    bottom: 0px;
     align-items: center;
     flex-direction:column;
     padding: 40px;
@@ -132,10 +168,10 @@ nav {
 }
 
 .box {
-    width:40%;
+    width:90%;
     background:black;
-    box-shadow: green 0 0 3px 2px;
-    border: double 5px green;
+    box-shadow: var(--primary) 0 0 3px 2px;
+    border: double 5px var(--primary);
     height: fit-content;
     margin: 15px;
 }
@@ -143,18 +179,18 @@ nav {
 .navbox {
     width:40%;
     background:black;
-    box-shadow: green 0 0 3px 2px;
-    border: double 5px green;
+    box-shadow: var(--primary) 0 0 3px 2px;
+    border: double 5px var(--primary);
     height: fit-content;
 }
 
 .boxhead {
-    color: lightgreen;
+    color: var(--secondary);
     padding:6px;
     padding-left: 10px;
     padding-right:10px;
     margin:0px;
-    border-bottom: solid 1px green;
+    border-bottom: solid 1px var(--primary);
     flex-direction: row;
     display:flex;
     justify-content: space-between;

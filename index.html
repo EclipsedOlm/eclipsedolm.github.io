@@ -1,48 +1,74 @@
 <head>
-
+    
+    <title>Eclipse's Den</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+    <script>themeRefresh()</script>
 
 </head>
 
 <body>
-    <nav>
-        <h1 class="navtitle">|| Eclipse's Den ||</h1>
-        <p class="navline">
-            ||-----------------------| ⁎ |-----------------------||
-        </p>
-        <ul class="navlinks">
-            <li class="currentnav"><a href="index.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="yippee.html">interests</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="atcoder.html">atcoder collection</a></li>
-        </ul>
-    </nav>
+    <header>
 
-    <div id="main">
-        <div class="box">
-            <ul class="boxhead">
-                <li>hello.txt</li>
-                <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+        <h1 class="navtitle">/* Eclipse's Den */</h1>
+
+    </header>
+    <div class="container">
+        <nav>
+            <h2>// nav</h2>
+            <ul class="navlinks">
+                <li class="currentnav"><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="yippee.html">interests</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="atcoder.html">atcoder collection</a></li>
             </ul>
-            <div class="boxbody">
-                Hello internet friend or stranger. Welcome to my corner of the internet :) My name is <strong>Eclipse</strong>, or <strong>EclipsedOlm</strong>, and I am a programmer (at least I try to be, this isn't my job (yet)). I do spend a pretty decent chunk of my time on atcoder.jp (I collate my favourite problems in the <a href="atcoder.html">AtCoder Collection</a>), and the rest probably obsessing over the latest piece of media that has captured my attention. (I probably spend more time on the obsession)<br>
+            
+            <h2>// theme</h2>
+            <ul class="navlinks">
+                <li><a onclick = "setTheme('default')">default</a></li>
+                <li><a onclick = "setTheme('new')">new</a></li>
+            </ul>
 
+            <p class="bascii">
+                &nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                &nbsp;&nbsp;\ | /<br>
+                &nbsp;&nbsp;&nbsp;\|/<br>
+                ----+----<br>
+                &nbsp;&nbsp;&nbsp;/|\<br>
+                &nbsp;&nbsp;/ | \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;|<br>
+            </p>
+
+        </nav>
+
+        <div id="main">
+            <div class="box">
+                <ul class="boxhead">
+                    <li>hello.txt</li>
+                    <li>—&nbsp;&nbsp;□&nbsp;&nbsp;✕</li>
+                </ul>
+                <div class="boxbody">
+                    Hello internet friend or stranger. Welcome to my corner of the internet :) My name is <strong>Eclipse</strong>, or <strong>EclipsedOlm</strong>, and I am a programmer (at least I try to be, this isn't my job (yet)). I do spend a pretty decent chunk of my time on atcoder.jp (I collate my favourite problems in the <a href="atcoder.html">AtCoder Collection</a>), and the rest probably obsessing over the latest piece of media that has captured my attention. (I probably spend more time on the obsession)<br>
+
+                </div>
             </div>
+
+            <p class="bascii">
+                &nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                &nbsp;&nbsp;\ | /<br>
+                &nbsp;&nbsp;&nbsp;\|/<br>
+                ----+----<br>
+                &nbsp;&nbsp;&nbsp;/|\<br>
+                &nbsp;&nbsp;/ | \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;|<br>
+            </p>
+
+            <div class="gap"></div>
+
         </div>
-
-        <p class="bascii">
-            &nbsp;&nbsp;&nbsp;&nbsp;|<br>
-            &nbsp;&nbsp;\ | /<br>
-            &nbsp;&nbsp;&nbsp;\|/<br>
-            ----+----<br>
-            &nbsp;&nbsp;&nbsp;/|\<br>
-            &nbsp;&nbsp;/ | \<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;|<br>
-        </p>
-
-        <div class="gap"></div>
-
     </div>
-
 </body>
